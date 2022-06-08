@@ -1,0 +1,1 @@
+c:\users\bobbi\Source\repos\CFV.Multitool\CFV.Multitool.UI\CFV.Multitool.UI.UWP\CFV.Multitool.UI.UWP.csproj;x86

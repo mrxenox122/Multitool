@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{9BB8ECDB-293A-4B70-BA24-3F0C5144CA0F}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CFV.Multitool.UI</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Creature.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CriticalHitEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TabController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CritPage.xaml.cs">
+      <DependentUpon>CritPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Dice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DicePage.xaml.cs">
+      <DependentUpon>DicePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EncounterPage.xaml.cs">
+      <DependentUpon>EncounterPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FailPage.xaml.cs">
+      <DependentUpon>FailPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\EncounterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CritPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Creatures\bestiary.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Fails\fMg.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Fails\fMl.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Fails\fNa.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Fails\fRg.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Hits\hBl.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Hits\hMg.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Hits\hPi.json" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\Hits\hSl.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Resources.resw" />
+  </ItemGroup>
+</Project>

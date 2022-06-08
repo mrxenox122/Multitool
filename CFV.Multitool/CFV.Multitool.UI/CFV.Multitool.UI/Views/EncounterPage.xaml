@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CFV.Multitool.UI.Views.EncounterPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Generate an encounter." VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="CR: " VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+                <Entry Keyboard="Numeric" x:Name="txtCR" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+            </StackLayout>
+            <Button x:Name="btnGenerate" Text="Generate Encounter!" Pressed="btnGenerate_Pressed"/>
+            <Label Text="Your party meets..." VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <StackLayout Orientation="Horizontal" Padding="20,20,20,20">
+                <Label Text="" x:Name="lblNumber" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                <Label Text="" x:Name="lblCreature" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

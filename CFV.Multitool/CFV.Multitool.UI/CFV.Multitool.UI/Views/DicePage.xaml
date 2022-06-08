@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CFV.Multitool.UI.Views.DicePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="Roll:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+                <Entry Keyboard="Numeric" x:Name="txtNumber" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                <Label Text="D" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+                <Entry Keyboard="Numeric" x:Name="txtSides" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+            </StackLayout>
+            <Button x:Name="Roll" Text="Roll!" Pressed="Roll_Pressed"/>
+            <Label Text="You Rolled: " VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Label Text="" x:Name="lblResult" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
